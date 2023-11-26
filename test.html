@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>College Syllabus</title>
+
+    <!-- Add this script tag in the head section of your HTML -->
+<script>
+    function showSyllabus(selectedValue) {
+        var driveLinks = {
+            'it': 'https://mega.nz/fm/HJVyRbYD',
+            'cst': 'https://mega.nz/folder/aZVGDDra#tU6Myia5GUSCZO3hiptlTg',
+            'cse': 'https://mega.nz/file/3U9nyDiQ#TWsm1uADAGVzHsCx1xUsfxXojvwWls2PIXrSb33DiGg',
+            'cse-specialization': 'https://mega.nz/file/aIVG2QBb#eQj9wJeeCSVVaUZQU43Joz9C7kEGr0nypapmLEOzS_U',
+            'cse-ibm-ml': 'https://mega.nz/file/XJUEHL7Y#jbNKeWa-EL6tN1D1dCyWnYFOMTfJPsHlifGU0KIIEu4',
+            'cse-ibm-ds-ai': 'https://mega.nz/file/udlSTbIK#85xnPXUm3O2Ty7EY5_MhEcysoTDgiUtQWfE4Cf8i0Oc',
+            'ce': 'https://mega.nz/file/nNskhChb#QvJkswOJX0_sjHj4I_-4A3tGjjiAjrOyAhJKh6QrTj0',
+            'ce-se-mtech': 'https://mega.nz/file/OR9gXYpR#gBz9gtLNFrgxL9C5f9j-QK2BOFnw__dyhka7If3j_v4',
+            // Add more links as needed
+        };
+
+        var selectedLink = driveLinks[selectedValue];
+
+        // Redirect to the selected Google Drive link
+        if (selectedLink) {
+            window.location.href = selectedLink;
+        }
+    }
+</script>
+
+
+</head>
+<body>
+    <header>
+        <h1>College Syllabus Repository</h1>
+        <h2>Department Of CSE</h2>
+    </header>
+        <section id="courses">
+        <div class="course-selection">
+            <label for="courseDropdown">Choose Syllabus:</label>
+            <select id="courseDropdown" onchange="showSyllabus(this.value)">
+                <option value="" selected disabled>Select </option>
+                <option value="it">Syllabus IT</option>
+                <option value="cst">Syllabus CST</option>
+                <option value="cse">Syllabus CSE</option>
+                <option value="cse-specialization">CSE Specialization Syllabus</option>
+                <option value="cse-ibm-ml">CSE IBM ML Syllabus</option>
+                <option value="cse-ibm-ds-ai">CSE IBM DS and AI Syllabus</option>
+                <option value="ce">CE Syllabus</option>
+                <option value="ce-se-mtech">CE SE M.Tech Syllabus</option>
+                <!-- Add more courses as needed -->
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+           <br>
+
+
+
+
+           <p> Selected files include Syllabus of all Semesters of the respective Selection</p>
+
+
+            </div>
+
+
+
+        <div id="syllabusContent">
+            <!-- Syllabus content will be loaded here based on user selection -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
